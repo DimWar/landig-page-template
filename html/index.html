@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+<!-- start landing sec -->
+    <section class="part-1">
+
+<!-- start header sec -->
+        <header>
+            <a href="#"><img src="../assets/img/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">what's new</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </header>
+<!-- end header sec -->
+
+ 
+<!-- start content sec -->
+        <div class="content-part">
+            <div class="text-part">
+            <h2>that's what<br><span>I like</span></br></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Iste, a quas perferendis 
+                itaque eaque veritatis placeat quisquam possimus
+                 quod magnam sed dicta nostrum sapiente totam, eius 
+                 dolorum. Laborum, quidem vitae?</p>
+            <a href="#">View All Products</a>
+        </div>     
+        <div class="content-img">
+            <img src="pepsi001.png" alt="blue" class="pepsi">
+        </div>
+    </div>
+    <ul class="tumb">
+        <li><img src="pepsi001.png" alt="pblue" onclick="imgSlider('pepsi001.png'); chengeBgColor('#0062be') "></li>
+        <li><img src="pepsi002.png" alt="pwhite" onclick="imgSlider('pepsi002.png'); chengeBgColor('#e60c2c') "></li>
+        <li><img src="pepsi003.png" alt="pblack" onclick="imgSlider('pepsi003.png'); chengeBgColor('#1e1e1e') "></li>
+    </ul>
+    <ul class="connect-part">
+        <li><a href="#"><img src="../assets/img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="../assets/img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="../assets/img/instagram.png" alt=""></a></li>
+    </ul>
+    </section>
+
+<!-- end landing sec -->
+
+
+<!-- script sec -->
+
+<script type="text/javascript">
+function imgSlider(anything)
+{
+    document.querySelector('.pepsi').src = anything ;
+}
+
+function chengeBgColor(color)
+{
+const sec = document.querySelector('.part-1')
+sec.style.background = color ;
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

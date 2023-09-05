@@ -1,0 +1,181 @@
+
+
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+    transition: all 0.5s;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul
+{
+position: relative;
+display: flex;
+}
+
+header ul li  
+{
+    list-style: none;
+}
+
+header ul li a 
+{
+    display: inline-block;
+    color: #eee;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content-part
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-part .text-part
+{
+    position: relative;
+    max-width: 600px;
+}
+
+.content-part .text-part h2
+{
+    color: #eee;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content-part .text-part h2 span
+{
+    font-size: 2em;
+}
+
+.content-part .text-part p
+{
+    color: #eee;
+}
+
+.content-part .text-part a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #eee;
+    color: #2e2e2e;
+    border-radius: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.content-part .content-img
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content-part .content-img img
+{
+    max-width: 260px;
+}
+
+.tumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.tumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.tumb li img
+{
+    max-width: 40px;
+}
+
+.tumb li:hover
+{
+    transform: translateY(-15px);
+}
+
+.connect-part
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.connect-part li
+{
+    list-style: none;
+}
+
+.connect-part li a
+{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(.5);
+    transition: all .5s;
+}
+
+.connect-part li a:hover
+{
+    transform: scale(.65);
+}
